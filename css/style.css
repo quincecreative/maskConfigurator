@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  /* position: fixed; */
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+  background-image: url("../img/maskLogo.png");
+  background-size: cover;
+}
+.title {
+  font: 900 43px "Barlow", sans-serif;
+  color: #ffffff;
+  float: right;
+  margin-right: 20px;
+}
+.container-box {
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: rgb(212, 212, 212);
+}
+.pickerBackground {
+  width: 60%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  display: none;
+  z-index: 90;
+}
+.shapeColor {
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  float: left;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+.colorOfShape {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px;
+  border-radius: 50%;
+  background-color: red;
+  float: left;
+  cursor: pointer;
+}
+.conf-cont {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(212, 212, 212);
+  float: left;
+  text-align: center;
+}
+.download {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 50px;
+  border: 3px solid rgb(0, 0, 0);
+  transition: 0.5s;
+  cursor: pointer;
+  float: right;
+}
+.colorPicker {
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  z-index: 100;
+  display: none;
+}
+.upperConfButtons {
+  width: 30%;
+  display: flex;
+  left: 20%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 200;
+}
+.confButtons {
+  width: 50%;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 200;
+}
+.conf-button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #000000;
+  border: 3px solid rgb(0, 0, 0);
+  transition: 0.5s;
+  text-align: center;
+}
+.conf-button:hover,
+.download:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  /* border: 5px solid rgb(255, 255, 255); */
+}
+.chooseShape {
+  width: 150px;
+  display: none;
+  position: absolute;
+  left: calc(50% + 30px);
+  bottom: 70px;
+  z-index: 100;
+}
+.addRect {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-image: url("../img/addRect.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+.addCircle {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-image: url("../img/addCircle.svg");
+  background-size: cover;
+  cursor: pointer;
+}
+h5 {
+  font: 900 15px "Barlow", sans-serif;
+  padding-top: 10px;
+}
+.paintCanvas {
+  background: url("../img/Maska_linije.png");
+  background-size: cover;
+  box-shadow: 5px 10px 80px 10px #a5a5a5;
+}
+.render-canvas-box {
+  width: 50%;
+  height: 100%;
+  touch-action: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+  float: right;
+}
+.babylonButtons {
+  width: 50%;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 300;
+}
